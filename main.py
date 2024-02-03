@@ -1,4 +1,3 @@
-import csv
 m=open('game.txt')
 f=m.read()
 a=[]
