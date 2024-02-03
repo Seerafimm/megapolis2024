@@ -1,4 +1,6 @@
-f=open('game.txt').read()
+import csv
+m=open('game.txt')
+f=m.read()
 a=[]
 fs= f.split('\n')
 for i in fs:
@@ -14,4 +16,6 @@ for i in a:
         i[2] = 'Done'
         i[3]= "0000-00-00"
 
-git
+newgame=open('game_new.csv','w')
+for el in a:
+    newgame.write(','.join(el)+'\n')
